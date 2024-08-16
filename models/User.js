@@ -14,7 +14,7 @@ const UserSchema = new Schema(
     image: {
       type: String,
     },
-    boomarks: [
+    bookmarks: [
       {
         type: Schema.Types.ObjectId,
         ref: 'Property',
@@ -27,4 +27,5 @@ const UserSchema = new Schema(
 )
 
 const User = models.User || model('User', UserSchema)
+
 export default User
